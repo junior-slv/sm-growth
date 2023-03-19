@@ -7,3 +7,9 @@ declare module "*.jpeg" {
     export = value;
  }
 
+ declare module "*.jpg" {
+   const value: any;
+   export = value;
+}
+
+

@@ -54,11 +54,7 @@ const Sidebar = () => {
           </p>
         </div>
       </Link>
-      <div className="sb-item" id="sidebar-sair">
-        <p>
-          <i className="bx bx-log-out" /> Sair
-        </p>
-      </div>
+
     </div>
   );
 };

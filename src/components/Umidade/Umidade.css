@@ -2,14 +2,70 @@
     width: 80vw;
     height: 100vh;
     display: grid;
-    grid-template-columns: 1fr;
-    grid-template-rows: 1fr 1fr 1fr ;
-
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 0.2fr 1.8fr;
+    grid-template-areas: "umidadetop umidadetop"
+                         "umidadeleft umidaderight"
     ;
+    animation: 1s opacid;
 }
-.umidade-top{
+#umidade-top{
     font-size: 32px;
     display: flex;
     align-items: center;
     justify-content: center;
 }
+
+#umidade-top{
+    grid-area: umidadetop;
+}
+#umidade-left{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: umidadeleft;
+}
+#umidade-left p{
+    font-size: 25px;
+}
+#umidade-right p{
+    font-size: 25px;
+}
+#umidade-right{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    grid-area: umidaderight;
+}
+@keyframes opacid {
+    from{
+        opacity: 0;
+    }
+    to{
+        opacity: 1;
+    }
+  }
+  @media only screen and (max-width: 600px) {
+    .umidade{
+        width: 100vw;
+        grid-template-columns: 1fr;
+        grid-template-rows: 1fr;
+        grid-template-areas: "umidadetop "
+                             "umidadeleft "
+                             "umidaderight"
+        ;
+    }
+    #umidade-left p{
+        font-size: 14px;
+    }
+    #umidade-right p{
+        font-size: 14px;
+    }
+    #umidadegraph{
+        width: 250px;
+        height: 250px;
+    }
+
+  }

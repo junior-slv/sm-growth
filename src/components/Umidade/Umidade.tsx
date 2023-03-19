@@ -26,9 +26,9 @@ const Umidade = () => {
           </div>
           <div id="umidade-right">
             <p>Boa umidade. porém perto do mínimo recomendado!</p>
-            <img src={umidadegraph} alt="" />
+            <img id="umidadegraph" src={umidadegraph} alt="" />
             <p>
-              Relatório do dia, manteve o ideal, porém, decaiu do recomendado,
+              Relatório do dia, manteve o ideal, porém,<br/>decaiu do recomendado,
               zona de perigo!
             </p>
           </div>

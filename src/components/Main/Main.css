@@ -4,6 +4,7 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr); 
+    animation: 1s opacid;
 }
 .main div{
     display: flex;
@@ -14,21 +15,20 @@
 
 }
 .main-top_left{
-    animation: 3s opacid1;
+    animation: 3s opacid;
 }
 .main-top_right{
-    animation: 6s opacid1;
+    animation: 3s opacid;    
 }
 .main-bottom_left{
-    animation: 9s opacid1;
+    animation: 4s opacid;   
 }
 .main-bottom_right{
-    animation: 12s opacid1;
+    animation: 4s opacid;    
 }
-@keyframes opacid1 {
+@keyframes opacid {
     from{
         opacity: 0;
-        transition: 5s ease
     }
     to{
         opacity: 1;
