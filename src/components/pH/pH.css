@@ -1,0 +1,62 @@
+
+.ph{
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr;
+    
+
+}
+.ph-top{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+#pointer{
+    position: absolute;
+    top: 314px;
+    left: 391px;
+    transform: rotate(270deg);
+    animation: pointer 2s ;
+    animation-fill-mode: both;
+}
+.ph-middle{
+    display: flex;
+    justify-content: space-around;
+}
+.ph-medidor img{
+    width: 312px;
+    height: 162px;
+}
+.ph-info p{
+    background: lightyellow;
+    width: 323px;
+    height: 160px
+}
+.ph-medidor_bottom{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.ph-medidor_bottom img{
+    width: 250px;
+    height: 100px
+}
+
+@keyframes pointer {
+    from{
+        top: 314px;
+        left: 489px;
+        transform: rotate(270deg);
+    }
+
+    to{
+        top: 289px;
+        left: 508px;
+        transform: rotate(329deg);
+
+    }
+}

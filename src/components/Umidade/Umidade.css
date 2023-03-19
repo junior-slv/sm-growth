@@ -1,0 +1,15 @@
+.umidade{
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr 1fr 1fr ;
+
+    ;
+}
+.umidade-top{
+    font-size: 32px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

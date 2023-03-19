@@ -1,0 +1,36 @@
+.main{
+    width: 80vw;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 1fr); 
+}
+.main div{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    flex-direction: column;
+    font-size: 25px;
+
+}
+.main-top_left{
+    animation: 3s opacid1;
+}
+.main-top_right{
+    animation: 6s opacid1;
+}
+.main-bottom_left{
+    animation: 9s opacid1;
+}
+.main-bottom_right{
+    animation: 12s opacid1;
+}
+@keyframes opacid1 {
+    from{
+        opacity: 0;
+        transition: 5s ease
+    }
+    to{
+        opacity: 1;
+    }
+}
